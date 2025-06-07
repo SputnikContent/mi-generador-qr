@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lib/qrcode.min.js"></script> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="img/mi-logo.png" alt="Logo de mi Generador QR" class="logo">
+
+        <h1>Crea tu Código QR</h1>
+        <p>Introduce cualquier enlace para generar un código QR:</p>
+        <input type="url" id="linkInput" placeholder="Ej: https://www.ejemplo.com">
+        <button id="generateBtn">Generar QR</button>
+        <div id="qrcode"></div>
+        <p id="errorMsg" class="error"></p>
+    </div>
+
+    <script src="lib/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
